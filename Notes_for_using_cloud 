@@ -1,0 +1,13 @@
+Steps to set up the VM Instance
+
+    1. Set up the Google Compute instance choosing the right amount of Vcpus(Choose 2 at this time)
+       and RAM expanded to 16 Gigs, Under the disks option unselect the delete disk.... option,
+       Select the number of GPUS required(Need to request for Quota first and then only can get GPU)
+
+    2. Under the scripts put the scripts to download and install cuda, also do not forget to install
+       cuDNN.
+
+    3. Install anaconda and then install tensorflow gpu and keras
+
+    4. To acess jupyter notebook, create a new firewell rule for the instance
+       under Network tab in Google Cloud console. 
